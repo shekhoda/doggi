@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Doggie</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<nav class="header__navbar navbar">
+					<div class="navbar__top">
+						<a class="navbar__logo logo" href="#">
+							<img width="40" height="40" src="img/mainpage/header/Logo.png" alt="Логотип">
+							<span>Счастливый дог</span>
+						</a>
+
+						<div class="navbar__items">
+							<div class="navbar__item">
+								<div class="navbar__item_title">Часы работы</div>
+								<div class="navbar__item_subtitle">Пн - Суб: 7:00 - 21:00 </div>
+							</div>
+							<div class="navbar__item ">
+								<div class="navbar__item_title">Телефон</div>
+								<a class="navbar__item_link" href="tel:88008881550">8 (800) 888 15 50 </a>
+							</div>
+						</div>
+
+						<div class="navbar__button">
+							<a href="" class="button button__light">Назначить встречу</a>
+						</div>
+
+						<div class="navbar__burger">
+							<span></span>
+						</div>
+					</div>
+
+					<div class="navbar__bottom">
+						<ul class="navbar__menu menu-nav">
+							<li class="menu-nav__item">
+								<a class="menu-nav__link" href="">Услуги</a>
+							</li>
+							<li class="menu-nav__item">
+								<a class="menu-nav__link" href="">Особенности</a>
+							</li>
+							<li class="menu-nav__item">
+								<a class="menu-nav__link" href="">Условия</a>
+							</li>
+							<li class="menu-nav__item">
+								<a class="menu-nav__link" href="">Отзывы</a>
+							</li>
+							<li class="menu-nav__item">
+								<a class="menu-nav__link" href="">Магазин</a>
+							</li>
+							<li class="menu-nav__item">
+								<a class="menu-nav__link" href="">О нас</a>
+							</li>
+						</ul>
+
+						<ul class="navbar__group-icons-list">
+							<li class="navbar__group-icons-item navbar__group-icons-item_search">
+								<button class="navbar__group-icons-icon" type="button">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M14.9649 14.255H15.7549L20.7449 19.255L19.2549 20.745L14.2549 15.755V14.965L13.9849 14.685C12.8449 15.665 11.3649 16.255 9.75488 16.255C6.16488 16.255 3.25488 13.345 3.25488 9.755C3.25488 6.165 6.16488 3.255 9.75488 3.255C13.3449 3.255 16.2549 6.165 16.2549 9.755C16.2549 11.365 15.6649 12.845 14.6849 13.985L14.9649 14.255ZM5.25488 9.755C5.25488 12.245 7.26488 14.255 9.75488 14.255C12.2449 14.255 14.2549 12.245 14.2549 9.755C14.2549 7.265 12.2449 5.255 9.75488 5.255C7.26488 5.255 5.25488 7.265 5.25488 9.755Z" fill="#4B4B4B" />
+									</svg>
+									<span class="visually-hidden">Поиск по сайту</span>
+								</button>
+								<form class="navbar__form-search search-form" action="">
+									<input class="search-form__input" type="search" name="search" placeholder="Поиск по сайту">
+									<button class="search-form__button button button__light" type="submit">Найти</button>
+								</form>
+							</li>
+							<li class="navbar__group-icons-item navbar__group-icons-item_cart">
+								<a class="navbar__group-icons-icon" href="#">
+									<span class="navbar__group-icons-counter">2</span>
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M18.2961 11.97C17.9561 12.59 17.2961 13 16.5461 13H9.09609L7.99609 15H19.9961V17H7.99609C6.47609 17 5.51609 15.37 6.24609 14.03L7.59609 11.59L3.99609 4H1.99609V2H5.26609L6.20609 4H21.0061C21.7661 4 22.2461 4.82 21.8761 5.48L18.2961 11.97ZM19.3061 6H7.15609L9.52609 11H16.5461L19.3061 6ZM7.99609 18C6.89609 18 6.00609 18.9 6.00609 20C6.00609 21.1 6.89609 22 7.99609 22C9.09609 22 9.99609 21.1 9.99609 20C9.99609 18.9 9.09609 18 7.99609 18ZM16.0061 20C16.0061 18.9 16.8961 18 17.9961 18C19.0961 18 19.9961 18.9 19.9961 20C19.9961 21.1 19.0961 22 17.9961 22C16.8961 22 16.0061 21.1 16.0061 20Z" fill="#4B4B4B" />
+									</svg>
+									<span class="visually-hidden">Корзина</span>
+								</a>
+								<div class="popover popover-cart">
+									<h2 class="visually-hidden">Корзина</h2>
+									<ul class="popover-cart__list">
+										<li class="popover-cart__item">
+											<a class="popover-cart__link" href="#">Корм для собаки</a>
+											<span class="popover-cart__price">500 ₽</span>
+											<button class="popover-cart__button-del">
+												<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+													<path d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z" fill="#000000"></path>
+												</svg>
+											</button>
+										</li>
+										<li class="popover-cart__item">
+											<a class="popover-cart__link" href="#">Корм для кошек</a>
+											<span class="popover-cart__price">500 ₽</span>
+											<button class="popover-cart__button-del">
+												<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+													<path d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z" fill="#000000"></path>
+												</svg>
+											</button>
+										</li>
+									</ul>
+									<div class="popover-cart__total">
+										<div class="block-price__count">
+											<span>Товаров</span>
+											<span>2</span>
+										</div>
+										<div class="block-price__coыt">
+											<span>Сумма</span>
+											<span>1000 ₽</span>
+										</div>
+									</div>
+									<div class="popover-cart__button">
+										<a class="button__light" href="#">Открыть корзину</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero">
+				<div class="hero__image ">
+					<img src="img/mainpage/header/BG Image.jpg" alt="Девушка с собакой">
+					<div class="hero__container">
+						<h1 class="hero__title main-title">Первоклассный пансион, детский сад и дневной спа-салон для собак</h1>
+						<a href="" class="hero__button button">Назначить встречу</a>
+					</div>
+				</div>
+			</section>
+			<section class="whoweare">
+				<div class="whoweare__container">
+					<div class="whoweare__block">
+						<div class="whoweare__header titles">
+							<div class="titles__label titles__label_white">Кто мы</div>
+							<h2 class="titles__item titles__item_white">Заведение, в котором владельцы могут оставить своих домашних животных на временное содержание</h2>
+						</div>
+						<p class="whoweare__text item-text item-text_white">Мы предлагают широкий спектр услуг и высокий уровень комфорта для собак. В наших пансионах работают опытные специалисты, которые заботятся о здоровье и благополучии животных.</p>
+						<div class="whoweare__image">
+							<img width="846" height="420" src="img/mainpage/whoweare/Image.jpg" alt="Собачья радость">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="promise">
+				<div class="promise__container">
+					<div class="promise__header titles">
+						<div class="titles__label">Предлагаем</div>
+						<h2 class="titles__item">Детский сад для собак</h2>
+					</div>
+					<div class="promise__items">
+						<div class="promise__item item-promise">
+							<img src="img/test/01.svg" class="item-promise__icon" alt="Иконка">
+							<div class="item-promise__body">
+								<div class="item-promise__title item-title">24/7 Любовь и забота</div>
+								<div class="item-promise__text item-text"> Эта услуга предназначена для щенков, которым требуется особый уход и внимание. В детском саду щенки получают необходимое обучение и социализацию, что помогает им стать полноценными членами общества.</div>
+								<div class="item-promise__text"></div>
+							</div>
+						</div>
+						<div class="promise__item item-promise">
+							<img src="img/test/02.svg" class="item-promise__icon" alt="Иконка">
+							<div class="item-promise__body">
+								<div class="item-promise__title item-title">Ветеринар</div>
+								<div class="item-promise__text item-text">Наш ветеринар следит за здоровьем животных, находящихся в пансионе. Он проводит осмотры собак, следит за их питанием и физической активностью. Если у собаки возникают проблемы со здоровьем, он назначает лечение и контролирует его.</div>
+								<div class="item-promise__text"></div>
+							</div>
+						</div>
+						<div class="promise__item item-promise">
+							<img src="img/test/03.svg" class="item-promise__icon" alt="Иконка">
+							<div class="item-promise__body">
+								<div class="item-promise__title item-title">Дневной спа-салон для собак</div>
+								<div class="item-promise__text item-text">Предлагаем услуги по уходу за внешним видом животных. Здесь собаки могут получить профессиональный груминг, чистку зубов, стрижку когтей и другие косметические процедуры.</div>
+								<div class="item-promise__text"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="video">
+				<div class="video__container">
+					<div class="video__img">
+						<img width="744" height="490" src="img/mainpage/video/pup.png" alt="Собака">
+					</div>
+					<div class="video__text-block">
+						<div class="video__item">
+							<h2 class="video__titles titles__item titles__item_white">Пансион для собак предоставляют владельцам возможность оставить своих питомцев в надёжных руках и быть уверенными в их благополучии.</h2>
+							<a href="" class="video__button button">Назначить встречу</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="services">
+				<div class="services__container">
+					<div class="services__header titles">
+						<div class="titles__label">Услуги</div>
+						<h2 class="titles__item">Услуги, предоставляемые пансионом для собак:</h2>
+					</div>
+					<div class="services__items">
+						<div class="services__item">
+							<div class="item-services">
+								<div class="item-services__icon">
+									<img src="img/mainpage/services/01.svg" alt="">
+								</div>
+								<div class="item-services__title item-title">Размещение</div>
+								<div class="item-services__text item-text">Питомцы размещаются в чистых и уютных вольерах или номерах, оборудованных всем необходимым для комфортного проживания</div>
+								<a href="" class="item-services__link">Узнать</a>
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="item-services">
+								<div class="item-services__icon">
+									<img src="img/mainpage/services/02.svg" alt="">
+								</div>
+								<div class="item-services__title item-title">Питание</div>
+								<div class="item-services__text item-text">Собаки получают высококачественный сбалансированный корм, соответствующий их возрасту, породе и индивидуальным потребностям</div>
+								<a href="" class="item-services__link">Узнать</a>
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="item-services">
+								<div class="item-services__icon">
+									<img src="img/mainpage/services/03.svg" alt="">
+								</div>
+								<div class="item-services__title item-title">Гигиена</div>
+								<div class="item-services__text item-text">В пансионе питомцам обеспечивают регулярный уход за шерстью, когтями и ушами, а также купание и чистку зубов</div>
+								<a href="" class="item-services__link">Узнать</a>
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="item-services">
+								<div class="item-services__icon">
+									<img src="img/mainpage/services/04.svg" alt="">
+								</div>
+								<div class="item-services__title item-title">Выгул</div>
+								<div class="item-services__text item-text">Собаки имеют возможность гулять на свежем воздухе, играть и общаться с другими животными.</div>
+								<a href="" class="item-services__link">Узнать</a>
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="item-services">
+								<div class="item-services__icon">
+									<img src="img/mainpage/services/05.svg" alt="">
+								</div>
+								<div class="item-services__title item-title">Дрессировка собак</div>
+								<div class="item-services__text item-text">Опытные кинологи проводят занятия по послушанию, защите и другим навыкам в зависимости от породы и возраста собаки</div>
+								<a href="" class="item-services__link">Узнать</a>
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="item-services">
+								<div class="item-services__icon">
+									<img src="img/mainpage/services/06.svg" alt="">
+								</div>
+								<div class="item-services__title item-title">Магазин товаров для животных</div>
+								<div class="item-services__text item-text">Можно приобрести корм, игрушки, одежду и другие аксессуары для собак</div>
+								<a href="" class="item-services__link">Узнать</a>
+							</div>
+						</div>
+					</div>
+					<a href="" class="services__button button button_padding-25px ">Посмотреть все</a>
+				</div>
+			</section>
+			<section class="appointment">
+				<div class="appointment__container">
+					<div class="appointment__body">
+						<form class="appointment__form form" action="#" method="get">
+							<div class="form__titles">
+								<div class="titles__item titles__item_white ">Назначить встречу</div>
+							</div>
+							<div class="form__block">
+								<div class="form__input">
+									<input class="form__item" tabindex="1" autocomplete="off" required placeholder="Имя" name="name" value="" type="text">
+								</div>
+								<div class="form__input">
+									<input class="form__item" tabindex="2" autocomplete="off" required placeholder="Email" name="email" value="" type="email">
+								</div>
+								<div class="form__input">
+									<input class="form__item" tabindex="3" autocomplete="off" required placeholder="Номер телефона" name="phone" value="" type="tel">
+								</div>
+								<!-- <div class="form__input">
+									<select class="form__item input__select" tabindex="4" required name="select">
+										<option value="">Select Service</option>
+										<option value="1">Pet Boarding (No Cages)</option>
+										<option value="2">Pet Daycare</option>
+										<option value="3">Pet Day Spa & Grooming</option>
+										<option value="4">Custom Meal Plans</option>
+										<option value="5">Pet Training</option>
+										<option value="6">Shop Our Store!</option>
+									</select>
+								</div> -->
+							</div>
+							<div class="form__footer">
+								<textarea class="form__textarea form__item" tabindex="5" autocomplete="off" placeholder="Напишите о вашем питомце" name="text"></textarea>
+								<button class="form__button button" type="submit">Отправить</button>
+							</div>
+						</form>
+						<div class="appointment__text">
+							<div class="appointment__title">Максимально, на сегодня у нас уже</div>
+							<div class="appointment__subtitle">5,700+</div>
+							<div class="appointment__description">заказчиков услуг</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="impact">
+				<div class="impact__container">
+					<div class="impact__body">
+						<div class="impact__contant">
+							<div class="impact__header titles">
+								<div class="titles__label titles__label_white">Наши достижения</div>
+								<h2 class="titles__item titles__item_white">Мы гордитмся своими достижениями</h2>
+							</div>
+						</div>
+						<div class="impact__image">
+							<img src="img/mainpage/impact/dog.jpg" alt="Dog">
+						</div>
+					</div>
+					<div class="impact__items">
+						<div class="impact__item item-impact">
+							<img src="img/mainpage/impact/icons/01.svg" class="item-impact__icon" alt="">
+							<div class="item-impact__body">
+								<div class="item-impact__value">3,700</div>
+								<div class="item-impact__text">ухоженных щенков</div>
+							</div>
+						</div>
+						<div class="impact__item item-impact">
+							<img src="img/mainpage/impact/icons/02.svg" class="item-impact__icon" alt="">
+							<div class="item-impact__body">
+								<div class="item-impact__value">4,500</div>
+								<div class="item-impact__text">перевозок собак</div>
+							</div>
+						</div>
+						<div class="impact__item item-impact">
+							<img src="img/mainpage/impact/icons/03.svg" class="item-impact__icon" alt="">
+							<div class="item-impact__body">
+								<div class="item-impact__value">12k+</div>
+								<div class="item-impact__text">видов кормов</div>
+							</div>
+						</div>
+						<div class="impact__item item-impact">
+							<img src="img/mainpage/impact/icons/04.svg" class="item-impact__icon" alt="">
+							<div class="item-impact__body">
+								<div class="item-impact__value">3,700</div>
+								<div class="item-impact__text">подстриженных собак</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<p>1996–2024 ООО «Радость». Все права защищены.</p>
+			</div>
+		</footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
